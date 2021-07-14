@@ -1,0 +1,61 @@
+body{
+    background-color: burlywood;
+}
+.links{
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 900px;
+    margin-top: 50px;
+    font-size: 20px;
+    }
+
+.hello{
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    margin-right: 900px;
+    margin-top: 200px;
+    font-size: 18px;
+    display: block;
+    margin-left: 10%;
+
+    /* position: absolute; */
+    position: relative;
+}
+
+.line1{
+    width: 50%;
+
+}
+    
+
+.pic1{
+    height: 350px;
+    width: 400px;
+    /* border-radius: 50%; */
+    text-align: center;
+    display: block;
+    margin-left: 1000px; 
+    top: 50%;
+  left: 10%; 
+  transform: translate(-60%, -60%);
+}
+.pic2{
+    height: 600px;
+    width: 500px;
+    margin: 0px;
+    top: 80%;
+    border-radius: 10%;
+    margin-left: 80px;
+    /* padding-top: 50px; */
+}
+.p{
+    top:50px;
+    margin: 150px;
+    text-align: left;
+    font-size: 20px;
+}
+.both{
+    display: flex;
+}

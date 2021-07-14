@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Aisha's portfolio</title>
+</head>
+
+<body>
+    <div class="links">
+        <a href="#homepage">Home</a>
+        <a href="#aboutpage">About</a>
+        <a href="#projectpage">Projects</a>
+        <a href="#contactpage">Contact</a>
+    </div>
+    
+    <h2 id="h1">Go Link Aisha</h2>
+    <div class="hello">
+        
+        <h4> Hello!<br>My name is Aisha Fadallala a student at AkiraChix
+            Campus, studying computer software.<br>
+            
+            <br>For more information about this software developer 
+            een don’t worry find the link provided About Me
+             Here!!
+
+             <hr id="line1">
+    <div class="about" id="aboutpage">
+    </div>
+    <h1 class="me">About Aisha Fadallala<h1>
+        
+        <div class="all" >
+        <img class="pic1" src="pic/Snapchat-30743762.jpg">
+      <div>
+        <p class="p">
+            In the year 1998 the queen was born, her great family named her Aisha Fadalla(Kaka).She grew
+            up in a family of seven children and she is the first born in the family.
+            Being the first born she never enjoyed her childhood because her parents were busy all the time
+             and she had to take all the responsibilities of the house work as well as taking care of young ones.<br>
+            
+            She is from Sudan, in a region called Nuba Mountain.Though its not a developed place completely,
+            she still loves it the way it is because that’s where she came from and  people
+             living there have respect, care and love each other. They also live in unity.
+            Due to the certain cultures still being practiced by the community she decided not to get married
+            but go and further her education in another country (Kenya). She hopes to be a great role model to
+            many young women in her community.<br>
+            
+            She stands for freedom, accountability and she believes that nothing is impossible  yet still nothing
+            great comes on a silver platter. </p> 
+            </div>  
+        </div>
+
+        <hr id="line1">
+    <div class="project" id="projectpage">
+    </div>
+    <h1 class="project">Check on my project links below.</h1>
+
+        <div class="project2">
+
+        <div id="myBtnContainer">
+          <!-- <button class="btn active" onclick="filterSelection('all')"> Show all</button> -->
+          <button class="btn" onclick="filterSelection('nature')"> Design</button>
+          <button class="btn" onclick="filterSelection('cars')"> Kotlin</button>
+          <button class="btn" onclick="filterSelection('people')"> Python</button>
+        </div>
+        </div>
+        
+        <div id="see">
+
+        <div class="row">
+          <div class="column nature">
+            <div class="content">
+                <a href="https://www.figma.com/file/m1PhOxhZqTS7l6VCOdMmIw/Job-Applications-App?node-id=0%3A1">
+              <img src="pic/app.png" alt="Application" style="width:20%",height:"30%">
+              </a>
+              <h5>Job Application App</h5>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+                <a href="https://www.figma.com/file/Nb8FLpqAQ43HsIFdqvNYRt/Personal-Web?node-id=0%3A1">
+            <img src="pic/Website.png" alt="Website" style="width:20%",height:"50%">
+              <h4>Person portfolio </h4>
+              </a>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+                <a href="https://www.figma.com/file/anUsnZ4Xn1gElDKR3D3kiD/Calu2?node-id=0%3A1">
+            <img src="pic/cal.png" alt="Caloculator" style="width:20%",height:"50%">
+              <p>Caloculator</p>
+              </a>
+
+            </div>
+          </div>
+          <!-- end -->
+          
+          <div class="column cars">
+            <div class="content">
+              <img src="/w3images/cars1.jpg" alt="Sign Up" style="width:20%",height:"50%">
+              <h4>Sign up Mobile App</h4>
+             
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="/w3images/cars2.jpg" alt="Job Application App" style="width:100%">
+              <h4>Refugees Mobile App</h4>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="/w3images/cars3.jpg" alt="Book Photos" style="width:100%">
+              <h4>Classic App Photo</h4>
+            </div>
+          </div>
+          <!-- END -->
+        
+          <div class="column people">
+            <div class="content">
+              <img src="/w3images/people1.jpg" alt="School System" style="width:100%">
+              <h4>School Website</h4>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people2.jpg" alt="Keep Health Reccounds" style="width:100%">
+              <h4>Health reccound Website</h4>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+        <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+        
+
+
+
+
+
+    <hr id="line2">
+    <div class="contact" id="contactpage"></div>
+
+<div class="fa">
+    <a href="#" class="fa fa-facebook"></a>
+    </div>
+    <h3 class="contact">Feel free to get in touch with me I love to hear from you.<br> Use the form below or drop me an email at aishafadallala@gmail.com</h3>
+  
+
+    <div class="container">
+        <form action="/action_page.php"></form>
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+         <label for="email">Email</label>
+         <input type="text" id="lname"name"email" placeholder="your email..">
+
+         <label for="subject">Subject</label>
+         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+     
+         <input type="submit" value="Submit">
+       </form>
+        </div>
+        <footer></footer><a href="https://www.linkedin.com/messaging/thread/2-MzFiMmNiNjEtOWE3NS00NDE3LWE1OTUtNGZmNjg0YmViMTNmXzAxMA==/">Linkdin</a></footer>
+</body>
+</html>

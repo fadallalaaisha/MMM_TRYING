@@ -6,58 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal</title>
     <link rel="stylesheet" href="Style.css">
+
 </head>
 <body>
-    
     <div class="links">
-        <a href="#homepage">Home</a>
-        <a href="#aboutpage">About</a>
-        <a href="#projectpage">Projects</a>
-        <a href="#contactpage">Contact</a>
-    </div>   
+        <a class="a" href="#homepage">Home</a>
+        <a class="b" href="#aboutpage">About</a>
+        <a class="c" href="#projectpage">Projects</a>
+        <a class="d" href="#contactpage">Contact</a>
+    </div> 
+    <h1 class="por">Portfolio</h1> 
+    <div id="homepage"></div>
 
+
+    <div class="row">
+      <div class="column1">
     <div class="hello">
-        
-        <h4> Hello!<br>My name is Aisha Fadallala a student at AkiraChix
-            Campus, studying computer software.<br>
-            
-            <br>For more information about this software developer 
-            een don’t worry find the link provided About Me
-             Here!!
-
-       </h4>
+        <h4> Hello! I'm Aisha Fadallala.</h4>
+        <h1>Android development</h1>
+        <br> <button class="Btn1" onclick="window.location.href='https://github.com/';">
+          Github
+         </button>
        </div> 
-             <img class="pic1" src="pic/Snapchat-883736786.jpg">
-         
-
-
-             <!-- About -->
-             <!-- <hr class="line1"> -->
-<hr id="line1">             
-
+       </div>
+        <div class="column1">
+             <img class="pic1" src="pic/Snapchat-883736786.jpg" width="250px" height="400px">
+        </div>
+        </div>
+      
+                       
+<div class="part2">
  <div class="about" id="aboutpage"></div> 
+ <h1 class="Me">About Me</h1>
  
  <div class="both">
  <img class="pic2" src="pic/Screenshot_2020-02-06-19-56-33-1.png">
  <p class="p">
-    In the year 1998 the queen was born, her great family named her Aisha Fadalla(Kaka).She grew
-    up in a family of seven children and she is the first born in the family.
-    Being the first born she never enjoyed her childhood because her parents were busy all the time
-     and she had to take all the responsibilities of the house work as well as taking care of young ones.<br>
+    I am currently studying software developement and UI/UX design at AkiraChix in Nairobi
+    -Kenya.I became passionate about technology after completing high school education 
+    because Africa is facing a lot of issues that can be solved with tech but there are not enough 
+    techies who will end the problems.
+    <br>
+    I am working on different projects both group and personal projects in design, web, and 
+    mobile development. Working on these projects will help me develop my skills, conferences
+     on teamwork and build my leadership skills.
+     
+     <br>My ambitions in the future are to become a great and successful designer and developer. 
+    I also want to become a good role model to inspire other ladies to join the tech industry.
     
-    She is from Sudan, in a region called Nuba Mountain.Though its not a developed place completely,
-    she still loves it the way it is because that’s where she came from and  people
-     living there have respect, care and love each other. They also live in unity.
-    Due to the certain cultures still being practiced by the community she decided not to get married
-    but go and further her education in another country (Kenya). She hopes to be a great role model to
-    many young women in her community.<br>
-    
-    She stands for freedom, accountability and she believes that nothing is impossible  yet still nothing
-    great comes on a silver platter. </p> 
-    </div>  
+     <br> <button class="Btn1" onclick="window.location.href='https://docs.google.com/document/d/1o8kO7ngLzFI7QzqPkpj8YNOzZunjpbOJ56tn2I2eJTM/edit#';">
+       Resume
+      </button> </p>
+</form> 
+</div>
+</div></div>
+<!-- project -->
+<div id="projectpage"></div>
+<h1 class="project">Check Out My Projects</h1>
 
-       
-         
+<div class="row">
+  <div class="column">
+    <a href="">
+    <img src="pic/app.png" "width="170%" " height="170%">
+  </a>
+    <h2 id="AD">Android developement</h2>
+  </div>
+  <div class="column">
+    <a href="https://github.com/fadallalaaisha/Py_School_System">
+    <img id="pp" src="pic/JGo.png" "width="170%"," height="170%">
+  </a>
+    <h2 id="WD">Web developement</h2>
+  </div>
+  <div class="column">
+    <a href="https://www.figma.com/file/m1PhOxhZqTS7l6VCOdMmIw/Job-Applications-App?node-id=0%3A1">
+    <img src="pic/app.png" "width="90px"," height="170%">
+    <a>
+    <h2 id="D">Design</h2>
+  </div>
+</div>
+
+<!-- contact -->
+<div class="contact" id="contactpage"></div>
+<div class="partContact">
+<h1 class="love">Drope me a line! I’d love to chat</h1>
+
+<div class="container">
+      <label for="fname">Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+     <label for="email">Email</label>
+     <input type="text" id="lname"name"email" placeholder="your email..">
+
+     <label for="subject">Message</label>
+     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+ 
+     <input type="submit" value="Submit">
+   </form>
+    </div>
+    </div>
 
 </body>
 </html>
